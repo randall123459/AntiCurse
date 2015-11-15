@@ -1,0 +1,9 @@
+name: AntiCurse
+version: 1.0
+main: me.randall123459.AntiCurse.AntiCurse
+description: Stops curse words from being used!
+
+permission:
+    curse.true:
+        description: Allowed to swear
+        default: op
