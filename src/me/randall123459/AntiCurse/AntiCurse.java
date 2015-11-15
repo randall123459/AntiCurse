@@ -15,7 +15,7 @@ public class AntiCurse extends JavaPlugin implements Listener {
     		for (String word : e.getMessage().split("  ")) {
     			if (getConfig().getStringList("badwords").contains(word)) {
     				e.setCancelled(true);
-    				e.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', getConfig().getString("prefix")) + ChatColor.WHITE + "Sorry you are not allowed to swear");
+    				e.getPlayer().sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "Sorry you are not allowed to swear");
 			}
     		}
         }
